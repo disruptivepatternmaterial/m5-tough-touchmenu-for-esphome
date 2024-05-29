@@ -35,12 +35,12 @@ esphome:
 external_components:
   - source:
       type: git
-      url: https://github.com/SmartHome-yourself/m5-tough-touchmenu-for-esphome
+      url: https://github.com/disruptivepatternmaterial/m5-tough-touchmenu-for-esphome
       ref: main
     components: [shys_m5_tough]
  
 dashboard_import:
-  package_import_url: github://SmartHome-yourself/m5-tough-touchmenu-for-esphome/shys-m5-tough-touchmenu.yaml@main
+  package_import_url: github://disruptivepatternmaterial/m5-tough-touchmenu-for-esphome/shys-m5-tough-touchmenu.yaml@main
   import_full_config: false
 
 esp32:
