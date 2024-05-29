@@ -69,11 +69,11 @@ captive_portal:
 
 binary_sensor:
   - platform: template
-    name: "${friendly_name} Angemeldet"
+    name: "${friendly_name} Logged In"
     id: logged_in
 
   - platform: template
-    name: "${friendly_name} Display on"
+    name: "${friendly_name} Display On"
     id: display_on
 
 sensor:
@@ -81,7 +81,7 @@ sensor:
     name: "${friendly_name} Failed Logins"
     id: failed_logins
     accuracy_decimals: 0
-    unit_of_measurement: "Fehler"
+    unit_of_measurement: "Error"
 
 
 text_sensor:
