@@ -79,10 +79,10 @@ namespace esphome
 
         void draw(void)
         {
-          M5.Display.setFont(&fonts::Orbitron_Light_32);
+          M5.Display.setFont(&fonts::FreeMonoBold24pt7b);
           M5.Display.setColor(color);
           M5.Display.setTextColor(text_color, bg_color);
-          M5.Display.setFont(&fonts::Orbitron_Light_32);
+          M5.Display.setFont(&fonts::FreeMonoBold24pt7b);
           M5.Display.setTextSize(fontsize);
 
           for (int i = 0; i < LINE_THICKNESS; ++i)
@@ -373,7 +373,7 @@ namespace esphome
        */
       void showButtonMenu()
       {
-        M5.Display.setFont(&fonts::Orbitron_Light_32);
+        M5.Display.setFont(&fonts::FreeMonoBold24pt7b);
         M5.Display.setTextSize(3);
         drawButtons(buttons[BUTTON_PAGE], buttonAnzahl[BUTTON_PAGE]);
       }
@@ -383,7 +383,7 @@ namespace esphome
        */
       void showPwdInput()
       {
-        M5.Display.setFont(&fonts::Orbitron_Light_32);
+        M5.Display.setFont(&fonts::FreeMonoBold24pt7b);
         M5.Display.setTextSize(3);
         M5.Display.startWrite();
         M5.Display.setTextColor(TFT_WHITE, TFT_BLACK);
@@ -397,7 +397,7 @@ namespace esphome
        */
       void showKeypad()
       {
-        M5.Display.setFont(&fonts::Orbitron_Light_32);
+        M5.Display.setFont(&fonts::FreeMonoBold24pt7b);
         M5.Display.setTextSize(3);
         drawButtons(buttons[PASSWORD_PAGE], 12);
       }
@@ -408,7 +408,7 @@ namespace esphome
        */
       void showOk()
       {
-        M5.Display.setFont(&fonts::Orbitron_Light_32);
+        M5.Display.setFont(&fonts::FreeMonoBold24pt7b);
         M5.Display.setTextSize(10);
         drawButtons(buttons[OK], 1);
       }
@@ -419,7 +419,7 @@ namespace esphome
        */
       void showFailure()
       {
-        M5.Display.setFont(&fonts::Orbitron_Light_32);
+        M5.Display.setFont(&fonts::FreeMonoBold24pt7b);
         M5.Display.setTextSize(10);
         drawButtons(buttons[FAILURE], 1);
       }
@@ -913,7 +913,7 @@ namespace esphome
         M5.Display.startWrite();
         M5.Display.fillRect(0, 0, 240, 320, TFT_BLACK);
         M5.Display.endWrite();
-        M5.Display.setFont(&fonts::Orbitron_Light_32);
+        M5.Display.setFont(&fonts::FreeMonoBold24pt7b);
         M5.Display.setTextSize(3);
 
         showCurrentPage();
